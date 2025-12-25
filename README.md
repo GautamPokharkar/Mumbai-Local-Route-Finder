@@ -1,16 +1,16 @@
-# 🚆 Mumbai Local Train Route Finder – Graph Algorithms API
+# 🚆 Mumbai Local Train Route Finder – Full-Stack Graph Algorithms System
 
-A **graph-based backend API** built using **Flask, NetworkX, and Pandas** to compute the **shortest route between Mumbai local train stations**, including **line change detection**.  
-The system is designed to support frontend clients (e.g., React) via REST APIs.
+A **full-stack route-finding system** with a **React (TypeScript) frontend** and a **Flask backend**, designed to compute the **shortest routes and line changes** in the Mumbai local train network using **graph algorithms**.
 
 ---
 
 ## ✅ Features
 
-- Computes the **shortest path** between two train stations  
+- Computes the **shortest route** between two Mumbai local train stations  
 - Detects and reports **line changes** along the route  
 - Models the railway network using a **NetworkX MultiGraph**  
-- Exposes routing logic through a **Flask REST API**  
+- Full-stack integration with a **React (TypeScript) frontend**  
+- REST API communication between frontend and backend  
 - Returns both **detailed** and **compact** route representations  
 
 ---
@@ -20,7 +20,17 @@ The system is designed to support frontend clients (e.g., React) via REST APIs.
 - Loads a real-world dataset containing Mumbai local stations and line information  
 - Constructs a **graph-based network model** using NetworkX  
 - Applies **shortest path algorithms** to compute optimal routes  
-- Identifies line transitions and annotates them in the output  
+- Identifies line transitions and annotates them in the result  
+- Exposes routing logic through a **Flask REST API**, consumed by a React UI  
+
+---
+
+## 🖥️ Frontend Overview
+
+- Built using **React with TypeScript**
+- Accepts user input for source and destination stations  
+- Displays computed routes and line changes in a user-friendly format  
+- Communicates with backend APIs using HTTP requests  
 
 ---
 
